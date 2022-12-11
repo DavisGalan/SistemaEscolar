@@ -1,0 +1,18 @@
+section.container.d-flex {
+    margin-top: 60px;
+    margin-bottom: 100px;   
+}
+
+
+input.form-control {
+    border: .2rem;
+    border-radius: 5px;
+
+}
+
+.col-xl-5.col-lg-12.d-flex{
+    background: rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}

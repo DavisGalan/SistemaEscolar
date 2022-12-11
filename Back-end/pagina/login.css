@@ -1,0 +1,10 @@
+div#caja {
+    width: 500px;
+    text-align: center;
+    margin-left: calc(50% - 250px);
+    border: solid 1px #ebebeb;
+    margin-top: 90px;
+    border-radius: 24px;
+    padding: 35px;
+    background: #abbac7;
+}

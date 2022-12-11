@@ -1,0 +1,37 @@
+.table{
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .1);    
+} 
+.btn{
+    font-size: 10px;
+    font-weight: 700 !important;
+    color: #efeded;
+}
+.btn1{
+    font-weight: 700 !important;
+}
+
+.card-header{
+    border-radius: 10px;   
+    padding-top: 50px;   
+}
+.container{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);  
+    margin-bottom: 150px;
+    padding-top: 100px;
+
+    
+    
+    
+   
+
+}
+.Letra{
+    font-size: 30px;
+    box-shadow: 0 5px 15px rgb(rgb(62, 62, 62), rgb(45, 45, 45), rgb(24, 24, 44));
+    transform: translateY(-15px);
+    transition: 1s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

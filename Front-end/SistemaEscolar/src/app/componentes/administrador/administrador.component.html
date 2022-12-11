@@ -1,0 +1,114 @@
+<app-menu></app-menu>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3 class="Letra">Lista de Alumnos</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+
+            <th scope="col"></th>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Grado</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Email</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Ubicacion</th>          
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let item of datos">
+            <th scope="row"><button type="button" class="btn btn-success" (click)="editar(item._id)">Editar</button>
+            </th>
+            <td>{{item.nombres}}</td>
+            <td>{{item.apellidos}}</td>
+            <td>{{item.grado}}</td>
+            <td>{{item.grupo}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.estado}}</td>
+            <td>{{item.ubicacion_geografica}}</td>
+            
+            
+            <td><button type="button" class="btn btn-danger" (click)="eliminar(item._id)">Elininar</button></td>
+            <div class="btn1">
+              <a routerLink="/paquete1" class="btn btn-outline-success ">Ingresar Curso</a>
+            </div>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="listar()">Listar</button>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="form-group">
+
+          <div class="form-group">
+            <label for="nombres">Editar nombre</label>
+            <input type="text" class="form-control" id="nombres" [(ngModel)]="configNombres">
+          </div>
+          <div class="form-group">
+            <label for="apellidos">Editar apellidos</label>
+            <input type="text" class="form-control" id="apellidos" [(ngModel)]="configApellidos">
+          </div>
+          <div class="form-group">
+            <label for="grado">Editar grado</label>
+            <input type="text" class="form-control" id="grado" [(ngModel)]="configGrado">
+          </div>
+          <div class="form-group">
+            <label for="grupo">Editar grupo</label>
+            <input type="text" class="form-control" id="grupo" [(ngModel)]="configGrupo">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Editar email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="configEmail">
+          </div>
+
+          <div class="form-group">
+            <label for="estado">Editar estado</label>
+            <input type="text" class="form-control" id="estado" [(ngModel)]="configEstado">
+          </div>
+
+          <div class="form-group">
+            <label for="ubicacion_geografica">Editar ubicacion_geografica</label>
+            <input type="text" class="form-control" id="ubicacion_geografica" [(ngModel)]="configUbicacion_geografica">
+          </div>         
+
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="editarDatos()">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

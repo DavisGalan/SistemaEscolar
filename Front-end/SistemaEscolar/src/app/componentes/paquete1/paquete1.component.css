@@ -1,0 +1,190 @@
+/* -------------------carrusel */
+.carousel-inne{
+    height: 280px;    
+    overflow: hidden;       
+    margin: 20px auto;
+    border: 1px solid black;
+    opacity: .85;    
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 5px;
+}
+
+
+/* -------------------comentar */
+
+.reserva{
+    padding-left: 200px;
+    margin-bottom: 10px;
+}
+.col-4{
+    margin-top: 10px;
+    overflow: hidden;  
+    margin: 20px auto;
+}
+
+.map{
+    padding-top: 20px;
+    height: 420px;
+    width: 650px;
+}
+.car2{
+    height: 100px;
+}
+
+.comment-box{    
+    padding:5px;
+}
+.comment-area textarea{
+   resize: none; 
+        border: 1px solid #ad9f9f;
+}
+.comment-area{
+    width: 1000px;
+}
+.form-control{
+    width: 60% !important;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgb(255, 0, 0) !important;
+}
+.send {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+.send:hover {
+    color: #fff;
+    background-color: #f50202;
+    border-color: #f50202;
+}
+.rating {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left;
+}
+.rating>input {
+    display: none
+}
+.rating>label {
+    position: relative;
+    width: 40px;
+    font-size: 40px;
+    color: #ff0000;
+    cursor: pointer;
+}
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+.rating>input:checked~label:before {
+    opacity: 1
+}
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+.itinerary-search-results-list{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+*, ::after, ::before, :not(.noborder) {
+    box-sizing: border-box;
+}
+*, ::after, ::before, :not(.noborder)
+.center {
+    text-align: center;
+}
+.upper {
+    text-transform: uppercase;
+}
+.font20 {
+    font-size: 20px;
+}
+.anton {
+    font-family: Oswald;
+}
+.center {
+    text-align: center;
+}
+.bottom10 {
+    margin-bottom: 10px;
+}
+*, ::after, ::before, :not(.noborder) {
+    box-sizing: border-box;
+}
+.itinerary-card-component[_ngcontent-c28] .itinerary-info[_ngcontent-c28] {
+    padding: 30px 30px 20px 30px;
+}
+.itinerary-card-component[_ngcontent-c28] {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    width: 100%;
+}
+.itinerary-card-component[_ngcontent-c28] .itinerary-info[_ngcontent-c28] .itinerary-duration[_ngcontent-c28] {
+    font-size: 22px;
+    font-weight: 400;
+    color: #005edc;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: proxima-bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.itinerary-card-component[_ngcontent-c28] .itinerary-info[_ngcontent-c28] .itinerary-name[_ngcontent-c28] {
+    font-size: 28px;
+    font-weight: 400;
+    color: #005edc;
+    line-height: 32px;
+    text-transform: capitalize;
+    font-family: proxima,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.itinerary-card-component[_ngcontent-c28] .itinerary-select[_ngcontent-c28] .itinerary-price[_ngcontent-c28] {
+    position: relative;
+    margin: -1px 0;
+    padding: 10px 10px 10px 40px;
+}
+
+.itinerary-card-component[_ngcontent-c28] .itinerary-image[_ngcontent-c28] {
+    transition: width .4s ease-out;
+    min-height: 250px;
+    width: 30%;
+}
+
+.itinerary-card-component[_ngcontent-c28] .itinerary-select[_ngcontent-c28] .itinerary-price[_ngcontent-c28] > span.taxes-and-fees[_ngcontent-c28] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: #626366;
+    line-height: 12px;
+    font-family: proxima-italic,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    padding: 10px 5px 10px 25px;
+    text-align: center;
+}
+
+.itinerary-card-component[_ngcontent-c28] .itinerary-select[_ngcontent-c28] .itinerary-select-arrow[_ngcontent-c28] {
+    background-color: #febd11;
+    margin: -1px -1px -1px 0;
+    width: 30px;
+}
+
+.cont{
+    width: 500px;
+    height: 280px;
+   
+}

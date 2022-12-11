@@ -1,0 +1,65 @@
+<app-menu></app-menu>
+<app-mensajes></app-mensajes>
+<section class="container">
+    <div class="row no-gutters justify-content-center">
+      
+      
+      <div class="col-xl-5 col-lg-12 d-flex mb-5 mt-5">
+        <div class="container align-self-center p-6">
+            <h2 class="font-weight-bold text-uppercase pt-3" >Registro de Alumno</h2>
+            <p>Ingresa la informacion para registrarte</p>
+            <div class="form-row mb-3">
+                <div class="form-group col-md-6">
+                    <label for="nombres" class="font-weight-bold">Nombres <span class="text-danger">{{failNombres}}</span></label>
+                    <input type="text" class="form-control" placeholder="Campo nombres" id="nombres" [(ngModel)]="nombres">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="apellidos" class="font-weight-bold">Apellidos <span class="text-danger">{{failApellidos}}</span></label>
+                    <input type="text" class="form-control" placeholder="Campo apellidos" id="apellidos" [(ngModel)]="apellidos">
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="grado" class="font-weight-bold">Grado <span class="text-danger">{{failGrado}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo grado" id="grado" [(ngModel)]="grado">
+            </div>
+            <div class="form-group mb-3">
+                <label for="grupo" class="font-weight-bold">Grupo <span class="text-danger">{{failGrupo}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo grupo" id="grupo" [(ngModel)]="grupo">
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="font-weight-bold">Email <span class="text-danger">{{failEmail}}</span></label>
+                <input type="email" class="form-control" id="email" [(ngModel)]="email">
+            </div>
+            <div class="form-group mb-3">
+                <label for="estado" class="font-weight-bold">Estado <span class="text-danger">{{failEstado}}</span></label>
+                <input type="email" class="form-control" placeholder="Campo estado" id="estado" [(ngModel)]="estado">
+            </div>
+            <div class="form-group mb-3">
+                <label for="ubicacion_geografica" class="font-weight-bold">Ubicacion_geografica <span class="text-danger">{{failUbicacion_geografica}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo ubicacion_geografica" id="ubicacion_geografica" [(ngModel)]="ubicacion_geografica">
+            </div>
+            <!-- <div class="form-group mb-3">
+                <label for="password" class="font-weight-bold">Contraseña <span class="text-danger">{{failPassword}}</span></label>
+                <input type="password" class="form-control" placeholder="Campo contraseña" id="password" [(ngModel)]="password">
+            </div>
+            <div class="form-group mb-3">
+                <label for="cpassword" class="font-weight-bold">Confirmar contraseña <span class="text-danger">{{failCPassword}}</span></label>
+                <input type="password" class="form-control" placeholder="Campo confirmar contraseña" id="cpassword" [(ngModel)]="cpassword">
+            </div> -->
+            <div class="form-group mb-5">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label text-muted">Al seleccionar esta casilla aceptas nuestro aviso de privacidad y los términos y condicciones</label>
+                </div>
+                
+            </div>
+            <button class="btn btn-primary" type="submit" (click)="registrar()">Registrarse</button>
+
+        </div>
+
+      </div> 
+    </div>
+
+</section>
+
+<app-footer></app-footer>
